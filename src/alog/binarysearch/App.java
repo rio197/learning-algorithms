@@ -21,7 +21,7 @@ public class App {
         }        
         
         System.out.println();
-        index = binarySearch(myArray, 21);
+        index = binarySearch(myArray, 5);
         System.out.println(index);
     }
     
