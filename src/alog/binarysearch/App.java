@@ -11,7 +11,7 @@ package alog.binarysearch;
  */
 public class App {
     public static void main(String[] args) {
-        int[] myArray = new int[10]; 
+    int[] myArray = new int[10]; 
         int jj = 11, index;
                 
         for (int ii=0; ii < myArray.length ; ii++) {
@@ -25,15 +25,15 @@ public class App {
         System.out.println(index);
     }
     
-    public static int binarySearch(int[] A, int x) {
-        int p = 0, r = A.length - 1;
+    public static int binarySearch(int[] a, int x) {
+        int p = 0, r = a.length - 1;
         int q;
 
         while (p <= r) {
             q = (p + r) / 2;
-            if (A[q] == x)
+            if (a[q] == x)
                 return q;
-            else if (A[q] > x) {
+            else if (a[q] > x) {
                 r = q - 1;
             }
             else {
