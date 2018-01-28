@@ -31,12 +31,12 @@ public class App {
 
         while (p <= r) {
             q = (p + r) / 2;
-            if (a[q] == x)
-                return q;
-            else if (a[q] > x)
+            if (a[q] > x)
                 r = q - 1;
-            else
+            else if (a[q] > x)
                 p = q + 1;
+            else
+                return q;
         }
         
         return -1;
