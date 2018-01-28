@@ -16,6 +16,7 @@ public class App {
                 
         for (int ii=0; ii < myArray.length; ii++) {
             myArray[ii] = jj;
+            System.out.print(myArray[ii] + " ");
             jj++;
         }
     }
