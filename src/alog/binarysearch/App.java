@@ -21,7 +21,7 @@ public class App {
         }        
         
         System.out.println();
-        index = binarySearch(myArray, 22);
+        index = binarySearch(myArray, 21);
         System.out.println(index);
     }
     
@@ -33,7 +33,7 @@ public class App {
             q = (p + r) / 2;
             if (a[q] > x)
                 r = q - 1;
-            else if (a[q] > x)
+            else if (a[q] < x)
                 p = q + 1;
             else
                 return q;
